@@ -1,0 +1,41 @@
+body {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+h1 {
+    background-color:rgba(248, 148, 6, .3);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.instructions {
+    background-color: rgba(68, 89, 211, 0.3);
+    padding: 50px;
+    color: white;
+}
+
+.computerScore{
+    background-color: rgba(232, 252, 56, 0.3);
+    padding: 20px;
+    color: white;
+}
+
+.totalScore {
+    background-color: rgba(156, 22, 29, 0.3);
+    padding: 20px;
+    color: white;
+}
+
+.gems {
+    background-color: rgba(132, 12, 231, 0.3);
+}
+
+.scoreBoard {
+    background-color: rgba(17, 248, 106, 0.3);
+    padding: 20px;
+    color: white;
+}
