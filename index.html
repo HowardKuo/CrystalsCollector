@@ -12,10 +12,10 @@
     <script src="assets/javascript/game.js"></script>
 </head>
 <body>
-    <h1>Crystals Collector!</h1>
+    <h1 class='rounded'>Crystals Collector!</h1>
     <br>
     <div class='row'>
-        <div class='instructions col-md-6'>
+        <div class='instructions col-md-6 rounded'>
             <h2>Rules of the Game:</h2>
             <p>You will be given a random number at the start of the game.
 
@@ -26,20 +26,35 @@
             The value of each crystal is hidden from you until you click on it.
 
             Each time when the game starts, the game will change the values of each crystal.</p>
+            <br>
+            <h2 class='playAgain'></h2>
 
         </div>
         <div class='col-md-6'>
             <div class='row'>
-                <div class='computerScore col-md-6'><p>FILLER</p></div>
-                <div class='totalScore col-md-6'><p>FILLER</p></div>
+                <div class='computerScore col-md-6 rounded'>
+                    <p>Target Score:</p>
+                    <br>
+                    <h2 class='targetNumber'></h2>
+                </div>
+                <div class='totalScore col-md-6 rounded'>
+                    <p>Gems Total:</p>
+                    <br>
+                    <h2 class='gemsTotal'></h2>
+                </div>
             </div>
-            <div class='gems row'>
+            <div class = 'gems row rounded'>
                 <section class='col-md-3 redGem'><img src='assets/images/ruby.png' alt='ruby'></section>
                 <section class='col-md-3 blueGem'><img src='assets/images/sapphire.png' alt='sapphire'></section>
-                <section class='col-md-3 yellowGem'><img src='assets/images/citrine.png' alt='citrine'></section>
+                <section class='col-md-3 yellowGem'><img src='assets/images/citrine.png' alt = 'citrine'></section>
                 <section class='col-md-3 greenGem'><img src='assets/images/emerald.png' alt='emerald'></section>
             </div>
-            <div class='scoreBoard row'><p>FILLER</p></div>
+            <div class='scoreBoard row rounded'>
+                <p>Wins: <span class='winsTotal'></span>
+                <br>
+                Losses: <span class='lossTotal'></span>    
+                </p>
+            </div>
         </div>
     </div>
 </body>
