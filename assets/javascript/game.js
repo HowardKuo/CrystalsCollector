@@ -7,7 +7,6 @@ var targetScore,
 
 //Functions Needed ========================================================================================
 
-
 $(document).ready(function() {
     startGame();
 });
@@ -20,11 +19,8 @@ function startGame() {
     $('.playAgain').text('');
     $('.targetNumber').text(targetScore);
     $('.gemsTotal').text(totalScore);
-    $('.winsTotal').text(winCounter);
-    $('.lossTotal').text(lossCounter);
     assignValue();
-
-    //This on click function adds the assigned value of the gem clicked to the total score.
+    //This on click function adds the assigned value of the glicked gem to the total score.
     $('.redGem img, .blueGem img, .yellowGem img, .greenGem img').on('click', function() {
         totalScore += parseInt($(this).attr('pointValue'));
         $('.gemsTotal').text(totalScore);
@@ -70,7 +66,7 @@ function endGame() {
     $('.blueGem img').off('click');
     $('.yellowGem img').off('click');
     $('.greenGem img').off('click');
-    //This function turns on the reset functionality and turns it off after it is clicked.
+    //This on click function turns on the reset functionality and turns it off after it is clicked.
     $('.playAgain').on('click', function() {
         startGame();
         $('.playAgain').off('click');
